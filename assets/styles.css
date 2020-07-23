@@ -1,0 +1,180 @@
+            html{
+                height:100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            body{
+                background:linear-gradient(120deg, rgba(20, 50, 100, 0.5)0% ,rgba(211, 119, 33, 0.8)50%, rgba(100, 50, 100, 0.7)100%);
+            }
+           #nav-head{
+               display:flex;
+               flex-direction: row;
+               box-shadow: 0px 4px 4px 0px rgba(18, 79, 170, 0.25);
+               padding:10px;
+           }
+           #home-link{
+               width:90%;
+           }
+           #home-link a{
+               color:#ffffff;
+               font-size:22px;
+               text-decoration: none;
+           }
+           #about-link i{
+               color:#ffffff;
+               font-size:24px;
+           }
+          
+           #quotes-container{
+               text-align:center;
+               margin-top:40%;
+               font-size:25px;
+           }
+           #getstarted{
+               background-color:rgb(59, 38, 31, 0.8);
+               color:white;
+               padding:15px;
+               font-size:28px;
+               outline:none;
+               border-radius:15px;
+               border-color: transparent;
+           }
+           #faq{
+               text-align: right;
+               padding:20px;
+           }
+           .fa-question-circle{
+               color:rgb(206, 96, 56);
+               font-size:40px;
+               padding:10px;
+           }
+           /*faq container*/
+           #faq-container{
+               background-color:white;
+               margin:auto;
+               padding:10px;
+               width:90%;
+               display: none;
+           }
+           .faq-sects{
+               background-color: rgb(59, 38, 31, 0.8);
+               margin-top:20px;
+               padding:10px;
+               font-size: 20px;
+               color:#ffffff;
+               border-radius: 10px;
+           }
+          
+           #answer-1{
+               background-color:rgb(37, 196, 196);
+               display:none;
+           }
+           #about-page{
+               background:linear-gradient(120deg, rgba(198, 218, 85, 0.5)0% ,rgba(160, 119, 80, 0.8)20%, rgba(100, 50, 100, 0.7)50%, rgba(2, 100, 5, 0.7)80%, rgba(55, 99, 30, 0.6)100%);
+               display: none;
+               padding:10px;
+               color:white;
+               font-size:20px;
+           }
+           .fa-desktop{
+               font-size:100px;
+               color:rgb(182, 170, 170);
+               margin-top:30%;
+           }
+           #get-started-page{
+               text-align: center;
+               display: none;
+           }
+           #ul{
+               display: flex;
+               flex-direction: row;
+           }
+           #ul li{
+               list-style-type: none;
+               font-size:20px;
+               padding:5px;
+               border:5px solid white;
+               border-radius: 10px;
+               margin:5px;
+           }
+           #ai-terms-container, #web-terms-container, #network-terms-container{
+               text-align: left;
+               display: none;
+           }
+           .terms, .listquestions{
+               background-color:white;
+               font-size:20px;
+               padding:5px;
+               margin:auto;
+               margin-top:10px;
+               text-align: center;
+               width:70%;
+           }
+           #show-case{
+               margin:auto;
+               width:80%;
+               font-size:20px;
+           }
+           .fa-close{
+               font-size:30px;
+               float:right;
+           }
+           #test-class{
+               display: none;
+           }
+
+
+           #display-api{
+               display: flex;
+               flex-direction: row;
+           }
+           .container{
+               color:white;
+               display: flex;
+               flex-direction:column;
+           }
+           .card{
+               border:5px solid #ffffff;
+               border-radius:25px;
+               margin:auto;
+               margin-bottom: 10px;
+               width:100%;
+           }
+           .headtitle{
+               background: rgb(90, 81, 81);
+               padding:0;
+               margin:0;
+               border-radius: 25px 25px 0px 0px;
+           }
+           .para{
+               justify-items: left;
+           }
+           #ai-terms-container,  #network-terms-container, .answers{
+               animation: slide;
+               animation-duration: 0.8s;
+           }
+            #web-terms-container{
+                animation: slide2;
+               animation-duration: 0.8s; 
+            }
+            .listquestions, .faqanswers{
+                animation:slide3;
+                animation-duration:0.8s;
+            }
+           @keyframes slide{       
+           0% {
+            transform: translatex(-100px);
+        }
+        }
+        @keyframes slide2{       
+           0% {
+            transform: translatex(100px);
+        }
+       
+    }
+    @keyframes slide3{       
+           0% {
+            transform: translatey(100px);
+        }
+    }
